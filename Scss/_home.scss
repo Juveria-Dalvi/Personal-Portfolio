@@ -1,0 +1,88 @@
+.section {
+    .section__container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+        .home-content {
+            width: 50%;
+        }
+
+        .home-img {
+            width: 50%;
+        }
+
+        .content {
+
+            .subtitle {
+                letter-spacing: 2px;
+                color: $text-light;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            .title {
+                font-size: 2.5rem;
+                font-weight: 400;
+                line-height: 3rem;
+                color: $text-dark;
+                margin-bottom: 1rem;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+
+            .description {
+                line-height: 1.5rem;
+                color: $text-light;
+                margin-bottom: 2rem;
+            }
+
+            .action__btns {
+                display: flex;
+                gap: 1rem;
+
+                button {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    padding: 1rem 2rem;
+                    outline: none;
+                    border: 2px solid $primary-color;
+                    border-radius: 10px;
+                    transition: 0.3s;
+                    cursor: pointer;
+                }
+
+                .hire__me {
+                    background-color: $primary-color;
+                    color: #ffffff;
+                }
+
+                .hire__me:hover {
+                    background-color: $primary-color-dark;
+                }
+
+                .LinkedIn {
+                    color: $primary-color;
+                }
+
+                .LinkedIn:hover {
+                    background-color: $primary-color-dark;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    .image {
+        display: grid;
+        place-items: center;
+        width: 50%;
+
+        img {
+            width: min(25rem, 90%);
+            border-radius: 100%;
+        }
+    }
+}

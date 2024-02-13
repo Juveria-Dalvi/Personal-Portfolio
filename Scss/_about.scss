@@ -1,0 +1,88 @@
+.content {
+    #featured {
+        padding: 4rem 0;
+
+        .container {
+
+            .title-wrap {
+                text-align: center;
+                padding: 1.4rem 0;
+                margin-bottom: 2rem;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+
+
+                .sm-title {
+                    display: block;
+                    color: #787878;
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    padding-bottom: 1rem;
+                    max-width: 450px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    line-height: 1.7;
+                }
+
+                .lg-title {
+                    font-size: 1.8rem;
+                }
+            }
+
+            .featured-row {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .featured-item {
+                    margin: 2rem 0;
+
+                    img {
+                        width: 300px;
+
+                        margin: 0px 15px;
+                    }
+
+                    .shadow:hover {
+                        -webkit-box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
+                        box-shadow: 0px 0px 18px -4px rgba(109, 109, 109, 0.64);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1400px) {
+//     .content {
+//         #featured {
+//             .featured-row {
+//                 grid-template-columns: repeat(3, 1fr);
+//             }
+//         }
+//     }
+// }
+
+@media (width < 800px) {
+    .section {
+        .section__container {
+            grid-template-columns: repeat(1, 1fr);
+
+            .content {
+
+
+                #featured {
+                    .featured-row {
+                        flex-direction: column;
+                        padding: 0rem 0;
+
+
+                        .featured-item {
+                            margin: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

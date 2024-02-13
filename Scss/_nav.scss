@@ -1,0 +1,103 @@
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 99;
+
+    .nav__content {
+        max-width: $max-width;
+        margin: auto;
+        padding: 1.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .logo a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $primary-color;
+            transition: 0.3s;
+
+
+            a:hover {
+                color: $primary-color-dark;
+            }
+        }
+
+
+        .checkbox {
+            display: none;
+
+            i {
+                font-size: 2rem;
+                color: $primary-color;
+                cursor: pointer;
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            list-style: none;
+            transition: left 0.3s;
+
+
+            li a {
+                padding: 0.5rem 1rem;
+                border: 2px solid transparent;
+                text-decoration: none;
+                font-weight: 600;
+                color: $text-dark;
+                transition: 0.3s;
+            }
+
+            li a:hover {
+                border-top-color: $secondary-color;
+                border-bottom-color: $secondary-color;
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+@media (width < 800px) {
+    nav {
+        .nav__content {
+            .checkbox {
+                display: block;
+            }
+
+            ul {
+                position: absolute;
+                width: 100%;
+                height: calc(100vh - 85px);
+                left: -100%;
+                top: 85px;
+                background-color: $extra-light;
+                flex-direction: column;
+                justify-content: center;
+                gap: 3rem;
+
+                li {
+                    a {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+
+            #check:checked~ul {
+                left: 0;
+            }
+
+        }
+    }
+}

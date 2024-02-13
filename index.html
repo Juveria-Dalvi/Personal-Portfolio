@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- animation.css cdn starts here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animation.css cdn ends here -->
+    <title>Personal Portfolio | Juveria Dalvi</title>
+
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar starts here  -->
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="index.html">Juveria</a></div>
+                <label for="check" class="checkbox">
+                    <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name="check" id="check" />
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navigation bar ends here  -->
+    </header>
+
+    <!-- main content starts here  -->
+    <main>
+        <section class="section">
+            <div class="section__container">
+                <div class="content home-content">
+                    <p class="subtitle animate__animated animate__bounce ">HELLO</p>
+                    <h1 class="title animate__animated animate__bounceInLeft">
+                        I'm <span>Juveria, <br />a</span> Data
+                        Enthusiast and Web Developer.
+                    </h1>
+                    <p class="description">
+                        Greetings from my portfolio! I'm Juveria, a talented and imaginative web developer and analyst
+                        who
+                        loves to draw and analyze insights from raw data in addition to building stunning, responsive,
+                        and
+                        user-friendly websites.
+                    </p>
+                    <div class="action__btns">
+                        <button id="hireMeButton" class="hire__me">Hire Me</button>
+                        <button class="LinkedIn" onclick="openLinkedInProfile()">LinkedIn</button>
+                    </div>
+                </div>
+                <div class="image home-img">
+                    <img src="image/juv.jpeg" alt="profile" />
+                </div>
+            </div>
+        </section>
+        <!-- main content starts here  -->
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
