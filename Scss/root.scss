@@ -1,0 +1,50 @@
+@import "config";
+@import "nav";
+@import "home";
+@import "about";
+@import "resume";
+@import "project";
+
+.section {
+    background-color: $extra-light;
+
+    .section__container {
+        min-height: 100vh;
+        max-width: $max-width;
+        margin: auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (width < 800px) {
+    .section {
+        .section__container {
+            padding: 5rem 1rem 5rem 1rem;
+            text-align: center;
+            justify-content: center;
+
+            .home-content {
+                width: 100%;
+            }
+        }
+
+        .image {
+            display: none;
+
+        }
+
+        .action__btns {
+            width: max-content;
+            margin: 0 auto;
+        }
+    }
+}
