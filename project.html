@@ -5,17 +5,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
 
     <!-- animation.css cdn starts here -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- animation.css cdn ends here -->
     <title>Personal Portfolio | Juveria Dalvi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
+<body id="project-container">
     <header>
         <!-- navigation bar starts here  -->
         <nav>
@@ -36,60 +47,71 @@
         <!-- navigation bar ends here  -->
     </header>
 
-    <main>
-        <div class="slider-container">
 
-            <div class="left-slide">
-                <div style="background-color: #FD3555">
-                    <h1>Technical Documentation Page</h1>
-                    <p>FreeCodeCamp Responsive Webdesign <a
-                            href="https://juveria-dalvi.github.io/Frontend-Projects/FreeCodeCamp/Technical%20Documentation%20Page/">Click
-                            here </a></p>
-                    </p>
-                </div>
-                <div style="background-color: #2A86BA">
-                    <h1>Museum of Candy </h1>
-                    <p>- bootstrap <a
-                            href="https://juveria-dalvi.github.io/Frontend-Projects/MUSEUM%20OF%20CANDY/index.html">Click
-                            here </a></p>
-                    </p>
-                </div>
-                <div style="background-color: #252E33">
-                    <h1>AirBnB Dataset Visualizations</h1>
-                    <p>Tableau Report <a
-                            href="https://public.tableau.com/views/AirBnBFullProject_17048434183610/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link">Click
-                            here </a></p>
-                </div>
-                <div style="background-color: #a79587">
-                    <h1>The-SQL-Murder-Mystery</h1>
-                    <p><a href="https://github.com/Juveria-Dalvi/The-SQL-Murder-Mystery">Click here </a>Find
-                        out the Culprit.. </p>
+    <section class="project-section">
+        <h2 class="line-title">Recent Projects</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+            <div class="item active"
+                style="background-image: url(https://media.licdn.com/dms/image/D4D22AQEJ61JV2JGFrA/feedshare-shrink_800/0/1682548883048?e=1711584000&v=beta&t=g9R79B5yUhkSmGpWE02irR_Kz3RMR55zhNmaMJziQA4);">
+                <div class="item-desc">
+                    <h3>Murder Mystery</h3>
+                    <p>Retrieve lost crime scene report: Murder occurred Jan. 15, 2018, in SQL City. Assistance
+                        required
+                        to reconstruct details. Access police database promptly.</p>
                 </div>
             </div>
-            <div class="right-slide">
-                <div
-                    style="background-color: #4f5668; background-image: url('https://media.licdn.com/dms/image/D4D22AQEJ61JV2JGFrA/feedshare-shrink_800/0/1682548883048?e=1710979200&v=beta&t=Jp4cXjsJ4E7ZJnhuGFmfdXpN_VB1tae78w_CYX0UnIk')">
-                </div>
-                <div style="background-image: url('./image/Dashboard.png')">
-
-                </div>
-                <div style="background-image: url('./image/Candyproject.png')">
-                </div>
-                <div style="background-image: url('./image/TechnicalDocumentationPage.png')">
+            <div class="item" style="background-image: url(./image/Dashboard.png);">
+                <div class="item-desc">
+                    <h3>AirBnB Visualizations</h3>
+                    <p>Analyzing Airbnb data via Tableau, my project aims to extract insights on pricing dynamics
+                        and
+                        popular neighborhoods, offering a comprehensive view of short-term rental trends.
+                    </p>
                 </div>
             </div>
-            <div class="action-buttons">
-                <button class="down-button">
-                    <i class="fas fa-arrow-down"></i>
-                </button>
-                <button class="up-button">
-                    <i class="fas fa-arrow-up"></i>
-                </button>
+            <div class="item" style="background-image: url(./image/Candyproject.png);">
+                <div class="item-desc">
+                    <h3>Museum of Candy</h3>
+                    <p>Completed Museum of Candy project on Udemy, practicing Bootstrap. Enhanced understanding of
+                        integrating Bootstrap into projects for realistic application.</p>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./image/TechnicalDocumentationPage.png);">
+                <div class="item-desc">
+                    <h3>Technical Doc</h3>
+                    <p>Developed Technical Documentation page on freeCodeCamp, focusing on Responsive Web Design for
+                        JavaScript. Mastered side and upper navigation in responsive layouts using anchor tags.</p>
+                </div>
+            </div>
+            <div class="item"
+                style="background-image: url(https://github.com/Juveria-Dalvi/Data-Analytics-Projects/raw/master/images/PowerBi%20Walmart%20Sales%20Dashboard%20.png);">
+                <div class="item-desc">
+                    <h3>Walmart Sales</h3>
+                    <p>PowerBI Walmart Sales Dashboard offers detailed sales insights and key metrics for Walmart
+                        stores. Interactive visualizations analyze sales data, revealing trends, top-selling
+                        products,
+                        and store performance across regions.</p>
+                </div>
+            </div>
+            <div class="item"
+                style="background-image: url(https://github.com/Juveria-Dalvi/Relational-Database-beta-FreeCodeCamp/raw/master/Images/celestial-bodies-wallpaper.jpg);">
+                <div class="item-desc">
+                    <h3>Cosmic Catalog</h3>
+                    <p>For the Celestial Body Database project, PostgreSQL was used to create a database centered on
+                        celestial bodies like planets, stars, and galaxies. Tables and columns were set up
+                        accordingly.
+                    </p>
+                </div>
             </div>
         </div>
+        </div>
+    </section>
 
-    </main>
-    <script src="vertical_slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="Project_slider.js"></script>
+
 </body>
 
 </html>
